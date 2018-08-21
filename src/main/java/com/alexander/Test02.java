@@ -1,9 +1,8 @@
 package com.alexander;
 
-public class SingletonTest {
+public class Test02 {
 
     public static void main(String[] args) {
-
         System.out.println("生成Singleton4:");
         Singleton4.method();
         Singleton4 s4 = Singleton4.getInstance();
