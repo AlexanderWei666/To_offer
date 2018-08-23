@@ -9,7 +9,7 @@ package com.alexander;
  * f(n) = 2 * f(n-1)
  * 等比数列
  */
-public class Test11 {
+public class Test09_2 {
     public static void main(String[] args) {
         System.out.println(jumpFloorII(8));
     }
