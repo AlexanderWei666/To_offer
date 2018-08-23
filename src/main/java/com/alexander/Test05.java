@@ -3,17 +3,16 @@ package com.alexander;
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class Test05 {
+class ListNode {
+    int val;
+    ListNode next = null;
 
-    public class ListNode {
-        int val;
-        ListNode next = null;
-
-        ListNode(int val) {
-            this.val = val;
-        }
+    ListNode(int val) {
+        this.val = val;
     }
+}
 
+public class Test05 {
 
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         ArrayList<Integer> list = new ArrayList();
