@@ -29,18 +29,22 @@ public class Test15 {
     }
 
     public static void main(String[] args) {
-        ListNode listNode1 = new ListNode(0);
-        ListNode listNode = listNode1;
+        ListNode head = new ListNode(0);
+        ListNode listNode = head;
         for (int i = 1; i < 10; i++) {
             listNode.next = new ListNode(i);
             listNode = listNode.next;
         }
         ListNode listNode2 = null;
 
-        listNode = FindKthToTail(listNode1, 4);
+        for (ListNode listNode3 = head;  listNode3 != null ; listNode3 = listNode3.next) {
+            System.out.print(listNode3.val + " ");
+        }
+        System.out.println();
+        listNode = FindKthToTail(head, 4);
         System.out.println(listNode.val);
-        System.out.println(FindKthToTail(listNode1, 20));
-        System.out.println(FindKthToTail(listNode1, 0));
+        System.out.println(FindKthToTail(head, 20));
+        System.out.println(FindKthToTail(head, 0));
         System.out.println(FindKthToTail(listNode2, 1));
     }
 }
